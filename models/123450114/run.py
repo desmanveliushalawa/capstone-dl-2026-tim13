@@ -17,7 +17,7 @@ sys.path.insert(0, str(AKAR))
 from src.protokol import data  # noqa: E402  (protokol tim yang dibekukan)
 
 NIM = Path(__file__).resolve().parent.name     # nama folder = NIM
-JALUR = "cnn"                                   # cnn | tl | rnn | trf | ae
+JALUR = "ae"                                   # cnn | tl | rnn | trf | ae
 
 
 def latih_dan_prediksi(seed: int, final: bool) -> tuple[np.ndarray, np.ndarray | None]:
@@ -30,7 +30,7 @@ def latih_dan_prediksi(seed: int, final: bool) -> tuple[np.ndarray, np.ndarray |
     # ---- MODEL (contoh minimal; ganti dengan arsitektur jalur Anda) ----
     def ke_tensor(X):
         return torch.tensor(np.asarray(X, dtype=np.float32)).reshape(len(X), -1)
-    X, y = ke_tensor(Xtr), torch.tensor(np.asarray(ytr))
+    X, y = ke_tensor(Xtr), torch.tensor(np.asarray(ytr)).long()
     model = torch.nn.Sequential(torch.nn.Linear(X.shape[1], 10))
     opt = torch.optim.SGD(model.parameters(), lr=0.01)       # tulis alasan pilihan optimizer di catatan.md
     for _ in range(2):
