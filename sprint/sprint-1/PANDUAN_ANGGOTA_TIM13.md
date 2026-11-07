@@ -120,6 +120,13 @@ Panduan ini disusun langkah demi langkah dari **NOL** untuk membantu seluruh ang
    * Pilih dropdown **`Commit (di luar aplikasi)`** $\rightarrow$ masukkan link commit terakhir Anda di GitHub $\rightarrow$ klik **`[ 🔗 Catat bukti ]`**.
 6. Tekan **F5 (Refresh)** $\rightarrow$ Lampu Anda langsung **HIJAU (🟢)**!
 
+### C. Langkah di Tab Papan (Memindahkan Tiket Kanban)
+1. Klik tab **Papan** di menu atas DSWorkbench.
+2. Cari tiket milik Anda:
+   * **Tiket `#11` (`[CNN] Kerangka models/<nim>/run.py pada data simulasi`):** Klik tiket tersebut $\rightarrow$ ubah Status dari `Backlog` menjadi **`Review`** (karena Anda sudah membuat kode dan mengajukan PR).
+   * **Tiket `#4` (`[Data] Pemotong jendela data meja uji`):** Ubah Status dari `Backlog` menjadi **`Dikerjakan`** (karena skrip `scripts/proses_data_primer.py` sudah siap untuk hari Meja Uji).
+   * **Tiket `#5` & `#12`:** **Biarkan tetap di `Backlog`** untuk sekarang (karena baru dikerjakan setelah data Meja Uji fisik diambil pada 12 November).
+
 ---
 
 ## 👤 2. NASYWA NUR AFIFAH (`122450125`)
@@ -229,6 +236,13 @@ Panduan ini disusun langkah demi langkah dari **NOL** untuk membantu seluruh ang
 3. Klik **Simpan**.
 4. Di bagian **Tambah bukti**, masukkan bukti `Review PR` (link PR Anda) dan `Commit (di luar aplikasi)` (link commit Anda), lalu klik **`[ 🔗 Catat bukti ]`**.
 5. Tekan **F5** $\rightarrow$ Lampu langsung **HIJAU (🟢)**!
+
+### C. Langkah di Tab Papan (Memindahkan Tiket Kanban)
+1. Klik tab **Papan** di DSWorkbench.
+2. Cari tiket milik Anda:
+   * **Tiket `#13` (atau `#19` jika tertera kerangka model Anda):** Ubah Status dari `Backlog` menjadi **`Review`** (karena Anda sudah membuat kerangka kode TL dan membuka PR).
+   * **Tiket `#6` (`Repo tim siap & run_all.py`):** Ubah Status menjadi **`Review`** atau **`Selesai`** (karena `run_all.py` sudah divalidasi).
+   * **Tiket `#7` & `#14`:** **Biarkan tetap di `Backlog`** untuk sekarang (akan dikerjakan setelah Meja Uji fisik 12 November).
 
 ---
 
@@ -341,6 +355,13 @@ Panduan ini disusun langkah demi langkah dari **NOL** untuk membantu seluruh ang
 3. Klik **Simpan**.
 4. Catat bukti PR + Commit di bagian Tambah Bukti $\rightarrow$ Tekan **F5** $\rightarrow$ Lampu langsung **HIJAU (🟢)**!
 
+### C. Langkah di Tab Papan (Memindahkan Tiket Kanban)
+1. Klik tab **Papan** di DSWorkbench.
+2. Cari tiket milik Anda:
+   * **Tiket `#15` (`[RNN] Kerangka models/<nim>/run.py pada data simulasi`):** Ubah Status dari `Backlog` menjadi **`Review`** (karena Anda sudah membuat model BiLSTM dan membuka PR).
+   * **Tiket `#8` (`Pembanding non-DL Random Forest & Sudut Sendi`):** Ubah Status dari `Backlog` menjadi **`Review`** atau **`Dikerjakan`** (karena skrip `scripts/baseline_rf.py` sudah diuji).
+   * **Tiket `#16` (`[RNN] Latih pada data primer meja`):** **Biarkan tetap di `Backlog`** untuk sekarang (akan dikerjakan setelah sesi Meja Uji fisik 12 November).
+
 ---
 
 ## 👤 4. ADITYA TAUFIQURROHMAN (`123450032`)
@@ -448,6 +469,14 @@ Panduan ini disusun langkah demi langkah dari **NOL** untuk membantu seluruh ang
    * **Hambatan:** `Tidak ada`
 3. Klik **Simpan**.
 4. Catat bukti PR + Commit di bagian Tambah Bukti $\rightarrow$ Tekan **F5** $\rightarrow$ Lampu langsung **HIJAU (🟢)**!
+
+### C. Langkah di Tab Papan (Memindahkan Tiket Kanban)
+1. Klik tab **Papan** di DSWorkbench.
+2. Cari tiket milik Anda:
+   * **Tiket `#17` (`[Transformer] Kerangka models/<nim>/run.py pada data simulasi`):** Ubah Status dari `Backlog` menjadi **`Review`** (karena Anda sudah membuat model Transformer dan membuka PR).
+   * **Tiket `#9` (`Gladi rencana mode simulasi`):** Ubah Status dari `Backlog` menjadi **`Dikerjakan`**.
+   * **Tiket `#10` (`Rekaman Demo Sprint 1`):** Ubah Status menjadi **`Dikerjakan`** saat mulai menyiapkan rekaman video demo.
+   * **Tiket `#18` (`[Transformer] Latih pada data primer meja`):** **Biarkan tetap di `Backlog`** untuk sekarang (akan dikerjakan setelah sesi Meja Uji fisik 12 November).
 5. **Kirim Demo Sprint 1 (Sebelum 20 Nov 23.59):**  
    Klik tombol biru **`+ Kirim demo`** di bilah Sprint pada tab Papan, lalu masukkan link YouTube/Drive video demo tim.
 
@@ -463,3 +492,72 @@ Panduan ini disusun langkah demi langkah dari **NOL** untuk membantu seluruh ang
   - `P05`: Aditya Taufiqurrohman
   - `P06, P07, P08`: 3 orang relawan teman sekelas.
 * **Prosedur:** Masing-masing orang duduk $\pm 3$ menit memperagakan 8 gestur pada lampu redup (`PWM 128`) dan terang (`PWM 255`) sebanyak 3 ulangan. Tangan kanan/kiri dicatat di berkas `sprint/sprint-1/LEMBAR_SESI_12NOV.md`.
+
+---
+
+## 🚀 ROADMAP KERJA TIM 13 SETELAH SEMUA HIJAU (8 – 20 NOV 2026)
+
+Setelah seluruh 5 anggota tim meraih Lampu Hijau (🟢) dan tiket kerangka model dipindahkan ke `Review`, berikut alur kerja yang WAJIB dieksekusi bersama hingga Sprint 1 ditutup:
+
+```
+[ 8 - 11 Nov ]  ───►  [ 12 Nov (11.00-12.00) ]  ───►  [ 13 - 16 Nov ]  ───►  [ 17 - 20 Nov ]
+Review PR Tim          Sesi Fisik Meja Uji             Latih Ulang             Video Demo & Laporan
+Merge ke 'main'        Perekaman 384 data             Data Meja Asli          Upload ke Workbench
+Uji 'run_all.py'       Dokumentasi video              Update metrics          Tenggat: 20 Nov 23.59
+```
+
+### 1. FASE 1: Code Review & Integrasi Cabang (8 – 11 November 2026)
+* **Tinjau Pull Request (GitHub):** Setiap anggota membuka halaman PR rekan setim di GitHub, membaca kode model, dan memberi komentar persetujuan (`Approve / LGTM`).
+* **Merge ke `main`:** Koordinator (Desman) atau Integrator (Nasywa) menggabungkan (merge) kelima branch kerja ke branch utama (`main`).
+* **Verifikasi Pipeline Terpadu:** Jalankan di terminal branch `main`:
+  ```bash
+  python run_all.py
+  ```
+  Pastikan seluruh 5 model Deep Learning dan 1 baseline Random Forest berjalan sukses tanpa error dan tabel ringkasan ter-generate di `reports/hasil_komparasi.md`.
+* **Konfirmasi Meja Uji ke Ruang Prodi 1 (Senin/Selasa, 9–10 Nov):**
+  Desman menemui **Pak Ardika Satria** di Ruang Prodi 1 untuk menyerahkan/mengonfirmasi file `t13-gestur-kamera.yaml` dan memastikan slot meja uji Kamis, 12 Nov (11.00–12.00 WIB) terkunci.
+* **Kunci 3 Partisipan Eksternal:** Pastikan 3 rekan sekelas (`P06, P07, P08`) siap hadir pada Kamis, 12 Nov jam 11.00 WIB.
+
+### 2. FASE 2: Eksekusi Hari-H Meja Uji Fisik (Kamis, 12 November 2026)
+* **Lokasi:** Ruang Prodi 1 (Meja Uji Fisik 5 Volt).
+* **Peran Tim saat Sesi (11.00 – 12.00 WIB):**
+  - **Desman & Bastian:** Mengoperasikan laptop perekam dengan skrip `scripts/rekam_gestur_meja.py`, mengontrol level lampu meja (PWM 128 & PWM 255), serta mencatat tangan kanan/kiri di `LEMBAR_SESI_12NOV.md`.
+  - **Aditya:** Merekam dokumentasi visual berupa foto dan video (b-roll interaksi tangan partisipan, lampu meja 5V, deteksi skeleton MediaPipe di layar). *Aset ini krusial untuk bahan video demo!*
+  - **Nasywa & Khoirul:** Mengarahkan alur antrean 8 partisipan agar 384 kondisi terekam rapi dalam batas waktu 60 menit.
+* **Kompilasi Data Meja:**
+  Setelah sesi selesai, Bastian menjalankan:
+  ```bash
+  python scripts/proses_data_primer.py
+  ```
+  Skrip ini otomatis membuang 1 detik pertama transisi tangan dan menghasilkan berkas `data/gestur_primer.npz`.
+* **Pindahkan Tiket:** Tiket `#1` dan `#2` dipindahkan ke **`Selesai`**.
+
+### 3. FASE 3: Pelatihan Model pada Data Primer Meja (13 – 16 November 2026)
+* Bastian dan Nasywa melakukan *push* file `data/gestur_primer.npz` dan memperbarui `data/MANIFEST.json` ke repo tim.
+* Seluruh anggota tim memperbarui model masing-masing untuk dilatih pada data primer meja:
+  ```bash
+  python models/<nim>/run.py --seed 1
+  ```
+* Verifikasi bahwa `results/<nim>/metrics.json` dan `pred_val.npy` terbarui dengan data meja asli.
+* **Pindahkan Tiket:** Ubah tiket pelatihan data primer (`#12`, `#14`, `#16`, `#18`, `#20`) dari `Backlog` $\rightarrow$ **`Dikerjakan`** $\rightarrow$ **`Review`**.
+* Jalankan kembali `python run_all.py` untuk mengompilasi performa perbandingan 5 model pada kondisi meja fisik.
+
+### 4. FASE 4: Produksi Video Demo Sprint 1 & Penyerahan (17 – 20 November 2026)
+* **Penanggung Jawab:** Aditya Taufiqurrohman (didukung seluruh anggota tim).
+* **Syarat & Format Video Demo Sprint 1:**
+  1. **Durasi:** Maksimal **10 menit** (disarankan 5 – 8 menit agar padat dan jelas).
+  2. **Struktur Isi Video:**
+     - **Menit 0:00 – 1:00:** Pembuka tim (Nama anggota, NIM, peran, dan judul proyek: "Ruang Cerdas 5 Volt").
+     - **Menit 1:00 – 3:00:** Penjelasan arsitektur 5 model (AE, CNN, TL, RNN, Transformer) dan baseline Random Forest.
+     - **Menit 3:00 – 5:00:** Cuplikan dokumentasi sesi Meja Uji Fisik 12 November di Ruang Prodi 1 (pencahayaan PWM 128 vs 255, 8 partisipan, perekaman pose MediaPipe).
+     - **Menit 5:00 – 7:00:** Demonstrasi eksekusi terminal `python run_all.py` dan pembahasan tabel hasil metrik akurasi/F1-score.
+     - **Menit 7:00 – 8:00:** Kesimpulan Sprint 1, hambatan yang diatasi, dan rencana kerja Sprint 2.
+  3. **Pengunggahan:** Unggah video ke YouTube (setel sebagai *Unlisted* / Tidak Publik) atau Google Drive (akses publik *"Siapa saja yang memiliki link"*).
+* **Pengiriman di DSWorkbench:**
+  - Buka tab **Papan** di DSWorkbench.
+  - Klik tombol biru **`+ Kirim demo`** di bilah Sprint 1 (hanya koordinator atau anggota tim).
+  - Masukkan link URL video demo dan deskripsi singkat, lalu klik Simpan.
+* **Tenggat Waktu Mutlak:**
+  - Pengiriman Video Demo Sprint 1 ditutup pada **Jumat, 20 November 2026 pukul 23.59 WIB**.
+* **Pindahkan Tiket:** Tiket `#3` ("Sprint Goal, Log Sprint, dan Demo Sprint 1") dan Tiket `#10` ("Rekaman Demo") dipindahkan ke **`Selesai`**.
+
