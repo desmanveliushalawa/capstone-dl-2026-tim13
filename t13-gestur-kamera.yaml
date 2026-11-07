@@ -1,0 +1,66 @@
+# ==============================================================================
+# Rencana Final Konfigurasi Pengambilan Data Meja Uji — Tim 13
+# Kasus: Gestur Tangan Pengendali Meja (Kamera) — Ruang Cerdas 5 Volt
+# Pembimbing: Ahmad Luky Ramdani | Pengelola Meja: Ardika Satria
+# ==============================================================================
+
+metadata:
+  tim: 13
+  kasus: "Gestur tangan pengendali meja (kamera) — Ruang Cerdas 5 Volt"
+  slot_jadwal: "Kamis, 12 November 2026, 11.00 - 12.00 WIB"
+  lokasi: "Laboratorium Ruang Cerdas 5 Volt / Ruang Prodi 1"
+  pengelola_meja: "Pak Ardika Satria"
+  struktur_tim:
+    koordinator: "Desman Velius Halawa (123450114) — Autoencoder (AE)"
+    penjaga_data: "Bastian Heskia Silaban (122450130) — CNN & Baseline Non-DL"
+    integrator: "Nasywa Nur Afifah (122450125) — Transfer Learning (MobileNet)"
+    analis_utama: "Khoirul Muttoharoh (123450021) — RNN / LSTM / GRU"
+    reproduksi_demo: "Aditya Taufiqurrohman (123450032) — Transformer Encoder"
+
+protokol_eksperimen:
+  partisipan:
+    jumlah: 8
+    daftar_kode: ["P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08"]
+    desain_blok: "1 partisipan = 1 blok pengujian mandiri"
+    aturan_tangan: "Tangan (kiri/kanan) dicatat per partisipan di lembar sesi; koordinat dicerminkan bila tangan kiri agar konsisten"
+
+  gestur:
+    jumlah_kelas: 8
+    daftar_kelas:
+      0: "Tangan terbuka"
+      1: "Kepalan"
+      2: "Jempol ke atas"
+      3: "Jempol ke bawah"
+      4: "Telunjuk ke atas"
+      5: "Dua jari (V)"
+      6: "Tanda OK"
+      7: "Telapak menghadap kamera lalu turun"
+    durasi_per_kondisi: 3.0  # detik (gestur ditahan statis, kecuali kelas 7)
+    jeda_antar_kondisi: 0.5  # detik (partisipan menurunkan tangan)
+
+  kondisi_pengujian:
+    taraf_lampu_pwm: [128, 255]  # 128 (pencahayaan sedang), 255 (pencahayaan maksimal)
+    jumlah_ulangan: 3
+    kondisi_per_blok: 48         # 8 gestur x 2 taraf lampu x 3 ulangan
+    total_kondisi_meja: 384      # 8 partisipan x 48 kondisi
+    estimasi_waktu_eksekusi: "sekitar 30 menit di meja uji"
+
+  modalitas_data:
+    kamera:
+      resolusi: "640x480"
+      interval_sampling: "0.1 detik (10 Hz)"
+    sensor_meja:
+      platform: "ESP32"
+      telemetri: "Seluruh sensor meja pintar tercatat sinkron"
+
+praproses_dan_rekayasa_fitur:
+  pemotongan_jendela:
+    aturan: "Buang 1 detik pertama pada setiap kondisi (meniadakan fase transisi tangan naik)"
+    durasi_efektif: "2.0 detik terakhir tiap kondisi"
+  ekstraksi:
+    pose: "21 titik landmark MediaPipe Hands (x, y, z = 63 fitur) per frame"
+    citra: "Potongan ROI (Region of Interest) tangan 640x480 untuk model Transfer Learning"
+  evaluasi:
+    skema_split: "GroupKFold berdasarkan partisipan (mencegah kebocoran data antar individu)"
+    baseline_non_dl: "Statistik sudut sendi dan kecepatan titik pose + Random Forest"
+
