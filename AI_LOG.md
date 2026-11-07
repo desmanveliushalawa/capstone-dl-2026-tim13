@@ -7,3 +7,4 @@ melainkan "mengerti atau tidak" — isi kolom terakhir dengan apa yang Anda ubah
 | Tanggal | Siapa (NIM) | Alat | Untuk apa | Apa yang diubah dari keluarannya |
 |---|---|---|---|---|
 | 2026-10-31 | 123450114 | Antigravity | Pemahaman alur Sprint 0, binding repo, dan setup branch pribadi | Menyesuaikan struktur branch ke 123450114/kerja dan inisialisasi folder kerja |
+| 2026-11-07 | 123450114 | Antigravity | Perancangan arsitektur Autoencoder Sprint 1 dan skema joint loss | Mengatur penalti MSE rekonstruksi pada fine-tuning dan dokumentasi catatan model |
