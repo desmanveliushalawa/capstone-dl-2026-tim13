@@ -1,0 +1,13 @@
+{
+  "metrik": {
+    "val_acc": 0.2,
+    "val_macro_f1": 0.196843
+  },
+  "seed": 2026,
+  "model": "random_forest_joint_angles",
+  "n_estimators": 100,
+  "n_features": 93,
+  "durasi_detik": 0.19,
+  "perangkat": "cpu laptop",
+  "catatan": "Baseline pembanding non-DL statistik sudut sendi + jarak pose"
+}
