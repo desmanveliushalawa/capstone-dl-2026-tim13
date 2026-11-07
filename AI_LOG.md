@@ -8,3 +8,4 @@ melainkan "mengerti atau tidak" — isi kolom terakhir dengan apa yang Anda ubah
 |---|---|---|---|---|
 | 2026-10-31 | 123450114 | Antigravity | Pemahaman alur Sprint 0, binding repo, dan setup branch pribadi | Menyesuaikan struktur branch ke 123450114/kerja dan inisialisasi folder kerja |
 | 2026-11-07 | 123450114 | Antigravity | Perancangan arsitektur Autoencoder Sprint 1 dan skema joint loss | Mengatur penalti MSE rekonstruksi pada fine-tuning dan dokumentasi catatan model |
+| 2026-11-07 | 123450114 | Antigravity | Sinkronisasi 20 tiket Workbench dan penyusunan spesifikasi t13-gestur-kamera.yaml | Menyesuaikan jadwal meja uji ke 12 Nov dan merumuskan protokol eksperimen 384 kondisi |
