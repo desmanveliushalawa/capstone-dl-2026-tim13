@@ -7,7 +7,7 @@ import numpy as np
 from src.common import manifest, split
 
 TUGAS = "klasifikasi"
-BERKAS_DATA = manifest.AKAR / "data" / "gestur_sampel.npz"
+BERKAS_DATA = manifest.AKAR / "data" / "aktual" / "gestur_primer.npz"
 
 
 def muat():
@@ -26,3 +26,9 @@ def muat():
     X_test, y_test = None, None
     
     return X[tr], y[tr], X[va], y[va], X_test, y_test
+
+
+def muat_partisipan() -> np.ndarray:
+    """Label partisipan (P01..P08) untuk seluruh X sebelum split."""
+    data = np.load(BERKAS_DATA)
+    return data["partisipan"]

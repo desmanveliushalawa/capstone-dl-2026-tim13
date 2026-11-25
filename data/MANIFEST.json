@@ -1,5 +1,5 @@
 {
-  "sumber": "https://github.com/desmanveliushalawa/capstone-dl-2026-tim13",
-  "berkas": ["data/gestur_sampel.npz"],
-  "catatan": "Dataset sampel Sprint 0 untuk 8 kelas gestur tangan statis (21 titik MediaPipe, 800 sampel) sebelum rekaman primer 10 Nov."
+  "sumber": "Rekaman meja uji Tim 13, 18 November 2026 (data/aktual)",
+  "berkas": ["data/aktual/gestur_primer.npz"],
+  "catatan": "Dataset primer: 332 sampel landmark MediaPipe (21 titik xyz) dari 658 frame kandidat (buang 1 detik pertama), 8 gestur. Partisipan terpakai P01, P02, P04, P05, P06; P03/P07 frame kamera hitam dan P08 tidak terekam."
 }

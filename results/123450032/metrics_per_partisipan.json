@@ -1,0 +1,85 @@
+{
+  "model": "trf",
+  "seed": 1,
+  "data_hash": "1150045b5a6138cdfab7328c10b42243",
+  "n_val": 33,
+  "overall": {
+    "val_acc": 0.333333,
+    "val_macro_f1": 0.259615
+  },
+  "per_partisipan": {
+    "P01": {
+      "n": 7,
+      "acc": 0.571429,
+      "macro_f1": 0.32
+    },
+    "P02": {
+      "n": 11,
+      "acc": 0.0,
+      "macro_f1": 0.0
+    },
+    "P04": {
+      "n": 3,
+      "acc": 0.333333,
+      "macro_f1": 0.25
+    },
+    "P05": {
+      "n": 7,
+      "acc": 0.285714,
+      "macro_f1": 0.194444
+    },
+    "P06": {
+      "n": 5,
+      "acc": 0.8,
+      "macro_f1": 0.733333
+    }
+  },
+  "partisipan_tersedia": [
+    "P01",
+    "P02",
+    "P04",
+    "P05",
+    "P06"
+  ],
+  "partisipan_tanpa_data": [
+    "P03",
+    "P07",
+    "P08"
+  ],
+  "pembanding_non_dl": {
+    "model": "random_forest_joint_angles",
+    "n_estimators": 100,
+    "n_features": 93,
+    "overall": {
+      "val_acc": 0.454545,
+      "val_macro_f1": 0.400568
+    },
+    "per_partisipan": {
+      "P01": {
+        "n": 7,
+        "acc": 0.714286,
+        "macro_f1": 0.493333
+      },
+      "P02": {
+        "n": 11,
+        "acc": 0.090909,
+        "macro_f1": 0.142857
+      },
+      "P04": {
+        "n": 3,
+        "acc": 0.666667,
+        "macro_f1": 0.5
+      },
+      "P05": {
+        "n": 7,
+        "acc": 0.285714,
+        "macro_f1": 0.222222
+      },
+      "P06": {
+        "n": 5,
+        "acc": 1.0,
+        "macro_f1": 1.0
+      }
+    }
+  }
+}
