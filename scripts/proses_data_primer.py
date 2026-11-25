@@ -2,10 +2,10 @@
 Tim 13 — Capstone Deep Learning (Ruang Cerdas 5 Volt).
 
 Sesuai Roadmap Sprint 1:
-    1. Membaca seluruh rekaman .npy di data/mentah/
+    1. Membaca seluruh rekaman .npy di data/aktual/mentah/
     2. Membuang 1 detik pertama tiap kondisi (menghilangkan masa transisi gerak tangan)
     3. Menggabungkan fitur koordinat 21 titik (x, y, z) dan label 0..7
-    4. Menyimpan dataset akhir ke data/gestur_primer.npz
+    4. Menyimpan dataset akhir ke data/aktual/gestur_primer.npz
     5. Menghitung data_hash dan memperbarui data/MANIFEST.json
 
 Penggunaan:
@@ -21,10 +21,10 @@ import numpy as np
 
 AKAR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(AKAR))
-from src.common import manifest
+from src.common import manifest, split
 
-FOLDER_MENTAH = AKAR / "data" / "mentah"
-BERKAS_OUTPUT = AKAR / "data" / "gestur_primer.npz"
+FOLDER_MENTAH = AKAR / "data" / "aktual" / "mentah"
+BERKAS_OUTPUT = AKAR / "data" / "aktual" / "gestur_primer.npz"
 BERKAS_MANIFEST = AKAR / "data" / "MANIFEST.json"
 
 
@@ -95,17 +95,17 @@ def main() -> None:
     # Perbarui data/MANIFEST.json
     konten_manifest = {
         "sumber": "https://github.com/desmanveliushalawa/capstone-dl-2026-tim13",
-        "berkas": ["data/gestur_primer.npz"],
+        "berkas": ["data/aktual/gestur_primer.npz"],
         "catatan": f"Dataset primer rekaman meja uji Tim 13 ({len(X)} sampel, buang 1 detik pertama, 8 gestur).",
     }
     BERKAS_MANIFEST.write_text(json.dumps(konten_manifest, indent=2), encoding="utf-8")
     print(f"-> MANIFEST diperbarui di: {BERKAS_MANIFEST.relative_to(AKAR)}")
 
     # Tampilkan hash data baru
-    h = manifest.hitung_hash()
+    h = manifest.data_hash(f"split:{split.SEED_SPLIT}".encode())
     print(f"-> Data Hash baru: {h}")
     print("\nLangkah selanjutnya:")
-    print("  1. Perbarui src/protokol/data.py jika beralih ke data/gestur_primer.npz")
+    print("  1. Perbarui src/protokol/data.py jika beralih ke data/aktual/gestur_primer.npz")
     print("  2. Jalankan ulang run_all.py untuk memverifikasi seluruh 5 model.")
 
 

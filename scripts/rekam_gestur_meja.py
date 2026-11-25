@@ -39,7 +39,7 @@ except ImportError:
     sys.exit(1)
 
 AKAR = Path(__file__).resolve().parents[1]
-FOLDER_OUTPUT = AKAR / "data" / "mentah"
+FOLDER_OUTPUT = AKAR / "data" / "aktual" / "mentah"
 
 DAFTAR_GESTUR = [
     "0: Tangan terbuka",
