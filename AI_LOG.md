@@ -10,3 +10,4 @@ melainkan "mengerti atau tidak" — isi kolom terakhir dengan apa yang Anda ubah
 | 2026-11-07 | 123450114 | Antigravity | Perancangan arsitektur Autoencoder Sprint 1 dan skema joint loss | Mengatur penalti MSE rekonstruksi pada fine-tuning dan dokumentasi catatan model |
 | 2026-11-07 | 123450114 | Antigravity | Sinkronisasi 20 tiket Workbench dan penyusunan spesifikasi t13-gestur-kamera.yaml | Menyesuaikan jadwal meja uji ke 12 Nov dan merumuskan protokol eksperimen 384 kondisi |
 | 2026-11-22 | 123450021 | Antigravity | Desain arsitektur Bidirectional LSTM sekuensial dan evaluasi seed 1 serta pembanding non-DL | Menambahkan global mean pooling 21 titik sendi dan regularisasi dropout ganda |
+| 2026-11-25 | 123450021 | Antigravity | Pelatihan dan validasi model BiLSTM data primer meja (Seed 1) untuk Tiket #16 | Memastikan integritas data_hash beku tim dan validasi skema metrics.json |
