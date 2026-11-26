@@ -12,7 +12,7 @@ from pathlib import Path
 
 import numpy as np
 
-AKAR = Path("C:\Users\hp\workbench-workspace\capstone-dl-2026-tim13\data\tim13_web-20261118-123656-9367.tar").resolve().parents[2]
+AKAR = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(AKAR))
 from src.protokol import data  # noqa: E402  (protokol tim yang dibekukan)
 
@@ -96,7 +96,7 @@ def main() -> None:
     out = AKAR / "results" / '122450130'
     out.mkdir(parents=True, exist_ok=True)
     np.save(out / "pred_val.npy", np.asarray(pred_val))
-    perintah = [sys.executable, "-m", "src.common.evaluate", "122450130", NIM, "--model", JALUR, "--seed", str(a.seed),
+    perintah = [sys.executable, "-m", "src.common.evaluate", "--nim", NIM, "--model", JALUR, "--seed", str(a.seed),
                 "--pred-val", str(out / "pred_val.npy"), "--durasi", f"{durasi:.1f}", "--perangkat", a.perangkat]
     if pred_test is not None:
         np.save(out / "pred_test.npy", np.asarray(pred_test))
