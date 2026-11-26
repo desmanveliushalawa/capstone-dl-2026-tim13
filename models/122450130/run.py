@@ -12,7 +12,7 @@ from pathlib import Path
 
 import numpy as np
 
-AKAR = Path(__file__).resolve().parents[2]
+AKAR = Path("C:\Users\hp\workbench-workspace\capstone-dl-2026-tim13\data\tim13_web-20261118-123656-9367.tar").resolve().parents[2]
 sys.path.insert(0, str(AKAR))
 from src.protokol import data  # noqa: E402  (protokol tim yang dibekukan)
 
