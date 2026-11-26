@@ -1,5 +1,33 @@
 {
   "sumber": "Rekaman meja uji Tim 13, 18 November 2026 (data/aktual)",
   "berkas": ["data/aktual/gestur_primer.npz"],
-  "catatan": "Dataset primer: 332 sampel landmark MediaPipe (21 titik xyz) dari 658 frame kandidat (buang 1 detik pertama), 8 gestur. Partisipan terpakai P01, P02, P04, P05, P06; P03/P07 frame kamera hitam dan P08 tidak terekam."
+  "catatan": "Dataset primer: 332 sampel landmark MediaPipe (21 titik xyz) dari 658 frame kandidat (buang 1 detik pertama), 8 gestur. Partisipan terpakai P01, P02, P04, P05, P06; P03/P07 frame kamera hitam dan P08 tidak terekam.",
+  "sesi_simulasi": {
+    "sumber_tar": "data/tim13_web-20261118-123656-9367.tar",
+    "berkas": [
+      "sprint/sprint-1/sesi_simulasi/dataset.npz",
+      "sprint/sprint-1/sesi_simulasi/label.csv",
+      "sprint/sprint-1/sesi_simulasi/sesi.json"
+    ],
+    "data_hash": "2122804488d5d5e95141e832ebed91ed",
+    "protokol": "src/protokol/PROTOKOL.md",
+    "rencana": "sprint/rencana/t13-gestur-kamera.yaml",
+    "n_sampel": 333,
+    "sampel_per_peserta": {
+      "P01": 45,
+      "P02": 39,
+      "P03": 82,
+      "P04": 83,
+      "P05": 84
+    },
+    "kondisi_terisi": 193,
+    "kondisi_total": 240,
+    "split_beku": {
+      "latih": ["P01", "P02", "P03"],
+      "validasi": ["P04"],
+      "uji": ["P05"]
+    },
+    "interval_terukur_detik": 0.9981,
+    "catatan": "Sesi simulasi Sprint 1 dari rekaman web 18 Nov 2026 (1 detik/frame, 5 blok peserta). Kode P01-P05 adalah urutan blok rekaman web, bukan identitas partisipan terverifikasi."
+  }
 }

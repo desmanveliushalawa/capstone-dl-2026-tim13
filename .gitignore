@@ -7,4 +7,7 @@ data/*
 __pycache__/
 .ipynb_checkpoints/
 .venv/
+# model MediaPipe diunduh otomatis oleh pemotong; cache landmark dapat dibuat ulang
+*.task
+sprint/sprint-1/sesi_simulasi/landmark_mentah.npz
 # prediksi boleh di-commit (kecil); checkpoint model tidak
