@@ -1,0 +1,727 @@
+{
+  "folder": "sesi_simulasi",
+  "hash_dataset": "2122804488d5d5e95141e832ebed91ed",
+  "n_sampel": 333,
+  "peserta": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "split": [
+    {
+      "mode": "beku",
+      "latih": {
+        "peserta": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "n": 166,
+        "kondisi": 105
+      },
+      "validasi": {
+        "peserta": [
+          "P04"
+        ],
+        "n": 83,
+        "kondisi": 44
+      },
+      "uji": {
+        "peserta": [
+          "P05"
+        ],
+        "n": 84,
+        "kondisi": 44
+      }
+    },
+    {
+      "mode": "lipat-P01",
+      "latih": {
+        "peserta": [
+          "P03",
+          "P04",
+          "P05"
+        ],
+        "n": 249,
+        "kondisi": 131
+      },
+      "validasi": {
+        "peserta": [
+          "P02"
+        ],
+        "n": 39,
+        "kondisi": 30
+      },
+      "uji": {
+        "peserta": [
+          "P01"
+        ],
+        "n": 45,
+        "kondisi": 32
+      }
+    },
+    {
+      "mode": "lipat-P02",
+      "latih": {
+        "peserta": [
+          "P01",
+          "P04",
+          "P05"
+        ],
+        "n": 212,
+        "kondisi": 120
+      },
+      "validasi": {
+        "peserta": [
+          "P03"
+        ],
+        "n": 82,
+        "kondisi": 43
+      },
+      "uji": {
+        "peserta": [
+          "P02"
+        ],
+        "n": 39,
+        "kondisi": 30
+      }
+    },
+    {
+      "mode": "lipat-P03",
+      "latih": {
+        "peserta": [
+          "P01",
+          "P02",
+          "P05"
+        ],
+        "n": 168,
+        "kondisi": 106
+      },
+      "validasi": {
+        "peserta": [
+          "P04"
+        ],
+        "n": 83,
+        "kondisi": 44
+      },
+      "uji": {
+        "peserta": [
+          "P03"
+        ],
+        "n": 82,
+        "kondisi": 43
+      }
+    },
+    {
+      "mode": "lipat-P04",
+      "latih": {
+        "peserta": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "n": 166,
+        "kondisi": 105
+      },
+      "validasi": {
+        "peserta": [
+          "P05"
+        ],
+        "n": 84,
+        "kondisi": 44
+      },
+      "uji": {
+        "peserta": [
+          "P04"
+        ],
+        "n": 83,
+        "kondisi": 44
+      }
+    },
+    {
+      "mode": "lipat-P05",
+      "latih": {
+        "peserta": [
+          "P02",
+          "P03",
+          "P04"
+        ],
+        "n": 204,
+        "kondisi": 117
+      },
+      "validasi": {
+        "peserta": [
+          "P01"
+        ],
+        "n": 45,
+        "kondisi": 32
+      },
+      "uji": {
+        "peserta": [
+          "P05"
+        ],
+        "n": 84,
+        "kondisi": 44
+      }
+    }
+  ],
+  "pemeriksaan": [
+    {
+      "nama": "jumlah_peserta_minimal_3",
+      "lulus": true,
+      "detail": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
+    },
+    {
+      "nama": "label_0_sampai_7",
+      "lulus": true,
+      "detail": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "nama": "tidak_ada_frame_ganda",
+      "lulus": true,
+      "detail": {
+        "n_sampel": 333,
+        "n_frame_unik": 333
+      }
+    },
+    {
+      "nama": "setiap_kondisi_satu_peserta",
+      "lulus": true,
+      "detail": "kondisi = peserta + lampu + gestur + ulangan"
+    },
+    {
+      "nama": "beku:peserta_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "beku:peserta_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "beku:peserta_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "beku:kondisi_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "beku:kondisi_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "beku:kondisi_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "beku:frame_latih_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "beku:frame_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "beku:frame_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "beku:mean_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 3.5067100112584626e-07
+      }
+    },
+    {
+      "nama": "beku:std_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 1.9158754982484538e-07
+      }
+    },
+    {
+      "nama": "beku:validasi_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          83,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "beku:uji_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          84,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P01:peserta_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P01:peserta_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P01:peserta_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P01:kondisi_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P01:kondisi_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P01:kondisi_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P01:frame_latih_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P01:frame_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P01:frame_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P01:mean_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 6.034895478901348e-07
+      }
+    },
+    {
+      "nama": "lipat-P01:std_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 1.2574126956321763e-07
+      }
+    },
+    {
+      "nama": "lipat-P01:validasi_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          39,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P01:uji_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          45,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P02:peserta_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P02:peserta_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P02:peserta_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P02:kondisi_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P02:kondisi_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P02:kondisi_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P02:frame_latih_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P02:frame_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P02:frame_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P02:mean_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 5.263905480390463e-07
+      }
+    },
+    {
+      "nama": "lipat-P02:std_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 1.0269390993133953e-07
+      }
+    },
+    {
+      "nama": "lipat-P02:validasi_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          82,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P02:uji_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          39,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P03:peserta_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P03:peserta_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P03:peserta_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P03:kondisi_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P03:kondisi_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P03:kondisi_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P03:frame_latih_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P03:frame_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P03:frame_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P03:mean_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 4.1243176740479726e-07
+      }
+    },
+    {
+      "nama": "lipat-P03:std_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 1.1820506040649548e-07
+      }
+    },
+    {
+      "nama": "lipat-P03:validasi_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          83,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P03:uji_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          82,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P04:peserta_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P04:peserta_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P04:peserta_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P04:kondisi_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P04:kondisi_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P04:kondisi_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P04:frame_latih_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P04:frame_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P04:frame_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P04:mean_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 3.5067100112584626e-07
+      }
+    },
+    {
+      "nama": "lipat-P04:std_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 1.9158754982484538e-07
+      }
+    },
+    {
+      "nama": "lipat-P04:validasi_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          84,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P04:uji_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          83,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P05:peserta_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P05:peserta_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P05:peserta_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P05:kondisi_latih_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P05:kondisi_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P05:kondisi_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": []
+    },
+    {
+      "nama": "lipat-P05:frame_latih_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P05:frame_latih_validasi_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P05:frame_validasi_uji_terpisah",
+      "lulus": true,
+      "detail": {
+        "irisan": 0
+      }
+    },
+    {
+      "nama": "lipat-P05:mean_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 3.685480822746001e-07
+      }
+    },
+    {
+      "nama": "lipat-P05:std_dari_latih",
+      "lulus": true,
+      "detail": {
+        "maks_selisih": 1.8535703816269233e-07
+      }
+    },
+    {
+      "nama": "lipat-P05:validasi_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          45,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "nama": "lipat-P05:uji_dinormalisasi_dengan_stat_latih",
+      "lulus": true,
+      "detail": {
+        "bentuk": [
+          84,
+          21,
+          3
+        ]
+      }
+    }
+  ],
+  "lulus": true
+}
