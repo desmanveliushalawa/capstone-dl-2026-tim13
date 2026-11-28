@@ -1,0 +1,164 @@
+{
+  "versi": 1,
+  "kasus": "Gestur tangan pengendali meja (kamera) — Ruang Cerdas 5 Volt",
+  "rencana": "..\\rencana\\t13-gestur-kamera.yaml",
+  "sumber_tar": "C:\\Users\\hp\\workbench-workspace\\capstone-dl-2026-tim13\\data\\tim13_web-20261118-123656-9367.tar",
+  "resolusi": "640x480",
+  "interval_nominal_detik": 0.1,
+  "interval_terukur_detik": 0.9981,
+  "jumlah_frame": 1670,
+  "frame_terlihat": 1049,
+  "peserta_rencana": 8,
+  "peserta_terdeteksi": 5,
+  "peserta_hilang": [
+    "P06",
+    "P07",
+    "P08"
+  ],
+  "batas": [
+    0,
+    240,
+    440,
+    633,
+    847,
+    1049
+  ],
+  "blok": [
+    {
+      "peserta": "P01",
+      "frame": [
+        0,
+        240
+      ],
+      "aktif": [
+        24,
+        240
+      ],
+      "mode_slot": "rencana",
+      "cadence": 3.5,
+      "slot_mulai_detik": 71.512,
+      "slot_selesai_detik": 239.512,
+      "n_sampel": 45
+    },
+    {
+      "peserta": "P02",
+      "frame": [
+        240,
+        440
+      ],
+      "aktif": [
+        255,
+        423
+      ],
+      "mode_slot": "rencana",
+      "cadence": 3.5,
+      "slot_mulai_detik": 254.548,
+      "slot_selesai_detik": 422.548,
+      "n_sampel": 39
+    },
+    {
+      "peserta": "P03",
+      "frame": [
+        440,
+        633
+      ],
+      "aktif": [
+        440,
+        632
+      ],
+      "mode_slot": "rencana",
+      "cadence": 3.5,
+      "slot_mulai_detik": 463.554,
+      "slot_selesai_detik": 631.554,
+      "n_sampel": 82
+    },
+    {
+      "peserta": "P04",
+      "frame": [
+        633,
+        847
+      ],
+      "aktif": [
+        640,
+        847
+      ],
+      "mode_slot": "rencana",
+      "cadence": 3.5,
+      "slot_mulai_detik": 678.506,
+      "slot_selesai_detik": 846.506,
+      "n_sampel": 83
+    },
+    {
+      "peserta": "P05",
+      "frame": [
+        847,
+        1049
+      ],
+      "aktif": [
+        861,
+        1047
+      ],
+      "mode_slot": "rencana",
+      "cadence": 3.5,
+      "slot_mulai_detik": 878.561,
+      "slot_selesai_detik": 1046.561,
+      "n_sampel": 84
+    }
+  ],
+  "kondisi_per_peserta": 48,
+  "urutan_kondisi": "lampu-gestur-ulangan",
+  "mode_slot": "rencana",
+  "durasi_detik": 3.0,
+  "buang_awal_detik": 1.0,
+  "jeda_rencana_detik": 0.5,
+  "deteksi": {
+    "model": "hand_landmarker.task",
+    "api": "mediapipe (tasks/solutions)",
+    "mode": "VIDEO",
+    "confidence": 0.1,
+    "num_hands": 1
+  },
+  "split_beku": {
+    "latih": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "validasi": [
+      "P04"
+    ],
+    "uji": [
+      "P05"
+    ]
+  },
+  "normalisasi": "mean/std dihitung dari data latih saja",
+  "jumlah_sampel": 333,
+  "sampel_per_peserta": {
+    "P01": 45,
+    "P02": 39,
+    "P03": 82,
+    "P04": 83,
+    "P05": 84
+  },
+  "kondisi_terisi": 193,
+  "kondisi_total": 240,
+  "distribusi_kelas": {
+    "0": 43,
+    "1": 41,
+    "2": 47,
+    "3": 43,
+    "4": 42,
+    "5": 42,
+    "6": 40,
+    "7": 35
+  },
+  "roi": "roi",
+  "hash_dataset": "2122804488d5d5e95141e832ebed91ed",
+  "catatan": [
+    "Rekaman kamera web berjarak 1 detik/frame (selangMs=1000), bukan 0,1 detik seperti rencana.",
+    "Slot kondisi dibagi rata pada rentang aktif tiap peserta (deteksi tangan pertama-terakhir).",
+    "Label gestur mengikuti urutan rencana; rekaman tidak menyertakan label.csv sesi.",
+    "Frame tanpa deteksi tangan tidak diisi/interpolasi.",
+    "Kode peserta P01-P05 adalah urutan blok pada rekaman web ini, bukan identitas partisipan terverifikasi; sesi aktual tim memakai kode P01, P02, P04, P05, P06."
+  ]
+}
